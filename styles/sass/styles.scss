@@ -1,0 +1,9 @@
+// Global
+@use './partials/global/setup';
+@use './partials/global/typography';
+@use './partials/global/variables';
+
+// Header
+@use './partials/header';
+@use './partials/cuisine-type';
+@use './partials/recipe-card';
