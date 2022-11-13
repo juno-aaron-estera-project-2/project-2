@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento&family=Staatliches&family=Ultra&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -235,4 +236,85 @@ html {
 img {
   max-width: 100%;
   display: block;
+}
+
+h1 {
+  font-family: "Ultra";
+  font-size: 70px;
+}
+
+label {
+  font-family: "Quattrocento";
+  font-size: 30px;
+}
+
+button {
+  font-family: "Staatliches";
+  font-size: 40px;
+}
+
+header h1 {
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+}
+fieldset .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+fieldset input[type=radio]:checked + img {
+  -webkit-box-shadow: 5px 5px 20px 15px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 20px 15px rgba(0, 0, 0, 0.4);
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+fieldset img:hover {
+  opacity: 0.6;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+  cursor: pointer;
+}
+fieldset input[type=radio] {
+  display: none;
+}
+fieldset img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 350px;
+  height: 350px;
+  position: relative;
+  margin: 20px;
+}
+
+button {
+  border: 10px dotted black;
+  background: none;
+  padding: 15px 50px 15px 50px;
+  margin: 80px;
+}
+
+button:hover {
+  opacity: 0.6;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+  cursor: pointer;
 }

@@ -4,67 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wordly Recipe</title>
+    <title>Worldly Recipe</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+    <div class="wrapper">
     <!-- Header -->
-    <header>
-        <h1>Worldy Recipes</h1>
-    </header>
+        <header>
+            <div class="earth">
+                <h1>Worldly Recipes</h1>
+            </div>
+        </header>
 
-    <!-- Main -->
-    <main>
-        <!-- Cuisine choice Section -->
-        <form action="#">
-            <fieldset class="cuisine">
-                <label for="italian">Italian
-                    <input type="radio" name="cuisine" id="italian" value="italian">
-                    <img src="./Images/Italian.jpg" alt="spaghetti with meatballs">
-                </label>
+        <!-- Main -->
+        <main>
+            <!-- Cuisine choice Section -->
+            <form action="#">
+                <fieldset class="cuisine">
+                    <div class="flex-container">
+                        
+                        <label for="italian">Italian
+                            <input type="radio" name="cuisine" id="italian" value="italian">
+                            <img src="./Images/Italian.jpg" alt="spaghetti with meatballs">
+                        </label>
+                        
+                        <label for="chinese">Chinese
+                            <input type="radio" name="cuisine" id="chinese" value="chinese">
+                            <img src="./Images/Chinese3.jpg" alt="dumplings with chopsticks">
+                        </label>
 
-                <label for="chinese">Chinese
-                    <input type="radio" name="cuisine" id="chinese" value="chinese">
-                    <img src="./Images/Chinese3.jpg" alt="dumplings with chopsticks">
-                </label>
+                        <label for="indian">Indian
+                            <input type="radio" name="cuisine" id="indian" value="indian">
+                            <img src="./Images/Indian1.jpeg" alt="naan and butter chicken">
+                        </label>
 
-                <label for="indian">Indian
-                    <input type="radio" name="cuisine" id="indian" value="indian">
-                    <img src="./Images/Indian1.jpeg" alt="naan and butter chicken">
-                </label>
+                        <label for="polish">Polish
+                            <input type="radio" name="cuisine" id="polish" value="polish">
+                            <img src="./Images/Polish.jpg" alt="soup with egg and sausage">
+                        </label>
 
-                <label for="polish">Polish
-                    <input type="radio" name="cuisine" id="polish" value="polish">
-                    <img src="./Images/Polish.jpg" alt="soup with egg and sausage">
-                </label>
+                        <label for="jamaican">Jamaican
+                            <input type="radio" name="cuisine" id="jamaican" value="jamaican">
+                            <img src="./Images/Jamaican1.jpg" alt="oxtail with rice and beans">
+                        </label>
 
-                <label for="jamaican">Jamaican
-                    <input type="radio" name="cuisine" id="jamaican" value="jamaican">
-                    <img src="./Images/Jamaican1.jpg" alt="oxtail with rice and beans">
-                </label>
+                        <label for="mexican">Mexican
+                            <input type="radio" name="cuisine" id="mexican" value="mexican">
+                            <img src="./Images/Mexican.jpg" alt="three different tacos">
+                        </label>
+                    </div>
+                </fieldset>
+                
+                <button type="submit">Find Recipes</button>
+                
+            </form>
 
-                <label for="mexican">Mexican
-                    <input type="radio" name="cuisine" id="mexican" value="mexican">
-                    <img src="./Images/Mexican.jpg" alt="three different tacos">
-                </label>
-            </fieldset>
+            <!-- Recipes Section -->
+            <section class="recipes">
+                <!-- Name of cuisine -->
+                <h2></h2>
 
-            <button type="submit">Find Recipes</button>
-
-        </form>
-
-        <!-- Recipes Section -->
-        <section class="recipes">
-            <!-- Name of cuisine -->
-            <h2></h2>
-
-            <!-- Three recipe cards show here -->
+                <!-- Three recipe cards show here -->
 
 
 
-        </section>
-    </main>
-
-    <script src="./project2.js"></script>
+            </section>
+        </main>
+    </div>
+        <script src="./project2.js"></script>
 </body>
 </html>
