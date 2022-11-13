@@ -40,7 +40,7 @@ app.displayRecipes = (recipes) => {
 				</ol>
 				<a class="button" href="${recipe.recipe.url}">Instructions</a>
 		</li>`;
-		document.querySelector('ul.recipes').innerHTML = recipeCard;
+		document.querySelector('ul.recipes').innerHTML += recipeCard;
 	});
 };
 
