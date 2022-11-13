@@ -1,0 +1,54 @@
+@use './global/variables';
+
+ul.recipes {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      list-style:none;
+      text-align: center;
+
+      li.card {
+         width: 30%;
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+
+         
+         h3{
+            font-family: variables.$heading-font;
+            font-size: 30px;
+            margin: 0; 
+         }
+
+         h4 {
+            font-family: variables.$base-font;
+            font-size: 20px;
+            margin: 0;
+         }
+                  
+         p {
+            font-family: variables.$base-font;
+            font-size: 20px;
+            margin: 0;
+         }
+         
+         ol {
+            font-family: variables.$base-font;
+            font-size: 20px;
+            list-style-position:outside;
+            padding: 0;
+            margin: 0;
+         }
+
+         a.button {
+            background: black;
+            color: white;
+            padding: 15px 20px;
+            margin-top: 20px;
+         }
+
+
+      }
+}
