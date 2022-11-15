@@ -24,49 +24,62 @@ app.getRecipes = () => {
 	fetch(url)
 		.then((res) => res.json())
 		.then((jsonData) => {
-			console.log("jvnnf");
+			
 			app.displayRecipes(jsonData.hits);
 			
 		});
 };
 
 app.displayRecipes = (recipes) => {
+	document.querySelector
 	recipes.forEach((recipe) => {
-		// Create li and add class of .card
+		// create li and add class of 'card'
 		const liContainer = document.createElement('li');
-		liContainer.classList.add('.card');
+		liContainer.classList.add('card');
 
-		// Create image element and add src and alt attributes
+		// create image element and add src and alt attributes
 		const recipeImage = document.createElement('img');
 		recipeImage.src = recipe.recipe.image;
 		recipeImage.alt = recipe.recipe.label;
 
-		// Create h3 and add recipe title
+		// create h3 and add recipe title
 		const recipeHeader = document.createElement('h3');
 		recipeHeader.innerText = recipe.recipe.label;
 
-		// Create a h4 with generic title
-		const ingredientLabel = document.createElement('h4');
-		ingredientLabel.innerText = "Ingredients";
+		// create h4 with label for ingredients
+		const ingredientsLabel = document.createElement('h4');
+		ingredientsLabel.innerText = 'Ingredients';
 
-		// Create anchor tag with link to recipe instructions
+		// create anchor tag with link to recipe instructions
 		const recipeLink = document.createElement('a');
 		recipeLink.href = recipe.recipe.url;
+		recipeLink.classList.add('button');
+		recipeLink.innerText = 'Full Recipe Here'
 
-		// Create ul element to hold ingredients
+		// create ul element for ingredients
 		const ingredientList = document.createElement('ul');
-		
-		// Loop through ingredientsLines array
-		recipe.recipe.ingredientLines.forEach( (ingredient) => {
+
+		// loop through ingredientLines array
+		recipe.recipe.ingredientLines.forEach((ingredient) => {
 			const ingredientLi = document.createElement('li');
 			ingredientLi.innerText = ingredient
 			ingredientList.append(ingredientLi);
-		})
-		liContainer.append(recipeImage, recipeHeader, ingredientLabel, ingredientList, recipeLink);
+		});
+
+		liContainer.append(
+			recipeImage,
+			recipeHeader,
+			ingredientsLabel,
+			ingredientList,
+			recipeLink
+		);
+
+		document.querySelector('.recipes').append(liContainer);
 	});
 };
 
 // app.displayRecipes = (recipes) => {
+// 	document.querySelector('ul.recipes').innerHTML = '';
 // 	recipes.forEach((recipe) => {
 // 		const recipeCard = `<li class="card">
 // 				<img src="${recipe.recipe.images.REGULAR.url}" alt="${recipe.recipe.label}">
@@ -84,5 +97,3 @@ app.displayRecipes = (recipes) => {
 
 // Initilize our app
 app.init();
-
-
