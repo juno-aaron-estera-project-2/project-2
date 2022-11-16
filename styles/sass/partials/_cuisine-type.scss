@@ -9,7 +9,8 @@ fieldset {
         flex-wrap: wrap;
         flex-direction: row;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        margin-top: 30px;
 
 
     input[type=radio]:checked + img {
@@ -17,30 +18,47 @@ fieldset {
         transition: 0.4s ease-out;
       }
 
-      img:hover {
+      label:hover {
         opacity: 0.6;
         transform: scale(1.1);
         transition: 0.4s ease-in;
         cursor: pointer;
       }
 
+      label:hover p {
+        visibility: visible;
+        background-color: white;
+        opacity: 0.6;
+        width: 100%;
+        text-align: center;
+        bottom: 40px;
+        left: -5px;
+        
+      }
+
     input[type=radio] {
         display: none;        
     }
 
+    label {
+        position: relative;
+        transition: 0.4s ease-out;
+    }
+
     p {
         position: absolute;
-        bottom: 265px;
-        left: 315px;
+        bottom: 45px;
+        left: 29px;
         z-index: 1;
+        visibility: hidden;
     }
 
     img {
         object-fit: cover;
-        width: 350px;
-        height: 350px; 
+        width: 215px;
+        height: 215px; 
         position: relative; 
-        margin: 20px;
+        margin: -5px;
         transition: 0.4s ease-out;
     }
 
@@ -53,8 +71,8 @@ button {
     padding: 15px 50px 15px 50px;
     margin: 80px;
     transition: 0.4s ease-out;
-    
-    
+    margin-left: 480px;
+   
 }
 
 button:hover {

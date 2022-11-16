@@ -243,9 +243,15 @@ h1 {
   font-size: 70px;
 }
 
-label {
+.idea {
   font-family: "Quattrocento";
-  font-size: 30px;
+  font-size: 20px;
+}
+
+p {
+  font-family: "Quattrocento";
+  font-size: 40px;
+  font-weight: bold;
 }
 
 button {
@@ -254,6 +260,9 @@ button {
 }
 
 header h1 {
+  text-align: center;
+}
+header .idea {
   text-align: center;
 }
 
@@ -273,9 +282,10 @@ fieldset .flex-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
 }
 fieldset .flex-container input[type=radio]:checked + img {
   -webkit-box-shadow: 5px 5px 20px 15px rgba(0, 0, 0, 0.4);
@@ -283,7 +293,7 @@ fieldset .flex-container input[type=radio]:checked + img {
   -webkit-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
 }
-fieldset .flex-container img:hover {
+fieldset .flex-container label:hover {
   opacity: 0.6;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -291,22 +301,37 @@ fieldset .flex-container img:hover {
   transition: 0.4s ease-in;
   cursor: pointer;
 }
+fieldset .flex-container label:hover p {
+  visibility: visible;
+  background-color: white;
+  opacity: 0.6;
+  width: 100%;
+  text-align: center;
+  bottom: 40px;
+  left: -5px;
+}
 fieldset .flex-container input[type=radio] {
   display: none;
 }
+fieldset .flex-container label {
+  position: relative;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
 fieldset .flex-container p {
   position: absolute;
-  bottom: 265px;
-  left: 315px;
+  bottom: 45px;
+  left: 29px;
   z-index: 1;
+  visibility: hidden;
 }
 fieldset .flex-container img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 350px;
-  height: 350px;
+  width: 215px;
+  height: 215px;
   position: relative;
-  margin: 20px;
+  margin: -5px;
   -webkit-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
 }
@@ -318,6 +343,7 @@ button {
   margin: 80px;
   -webkit-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
+  margin-left: 480px;
 }
 
 button:hover {
