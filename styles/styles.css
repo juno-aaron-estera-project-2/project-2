@@ -277,13 +277,13 @@ fieldset .flex-container {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
-fieldset input[type=radio]:checked + img {
+fieldset .flex-container input[type=radio]:checked + img {
   -webkit-box-shadow: 5px 5px 20px 15px rgba(0, 0, 0, 0.4);
           box-shadow: 5px 5px 20px 15px rgba(0, 0, 0, 0.4);
   -webkit-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
 }
-fieldset img:hover {
+fieldset .flex-container img:hover {
   opacity: 0.6;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -291,10 +291,16 @@ fieldset img:hover {
   transition: 0.4s ease-in;
   cursor: pointer;
 }
-fieldset input[type=radio] {
+fieldset .flex-container input[type=radio] {
   display: none;
 }
-fieldset img {
+fieldset .flex-container p {
+  position: absolute;
+  bottom: 265px;
+  left: 315px;
+  z-index: 1;
+}
+fieldset .flex-container img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 350px;
@@ -360,7 +366,7 @@ ul.recipes li.card h3 {
 }
 ul.recipes li.card h4 {
   font-family: "Quattrocento";
-  font-size: 20px;
+  font-size: 25px;
   margin: 0;
 }
 ul.recipes li.card p {
@@ -376,6 +382,9 @@ ul.recipes li.card ol {
   margin: 0;
 }
 ul.recipes li.card a.button {
+  font-family: "Staatliches";
+  font-size: 30px;
+  text-decoration: none;
   background: black;
   color: white;
   padding: 15px 20px;
