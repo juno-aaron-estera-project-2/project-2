@@ -60,7 +60,7 @@ app.displayRecipes = (recipes) => {
 
 		// create h4 with label for ingredients
 		const ingredientsLabel = document.createElement('h4');
-		ingredientsLabel.innerText = 'Ingredients';
+		ingredientsLabel.innerText = 'Ingredients:';
 
 		// create anchor tag with link to recipe instructions
 		const recipeLink = document.createElement('a');
