@@ -8,6 +8,11 @@ h1 {
     font-size: 70px;
 }
 
+input {
+    font-family: variables.$button-font;
+    font-size: 20px;
+}
+
 .idea {
     font-family: variables.$base-font;
     font-size: 20px;

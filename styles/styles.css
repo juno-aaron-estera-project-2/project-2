@@ -243,6 +243,11 @@ h1 {
   font-size: 70px;
 }
 
+input {
+  font-family: "Staatliches";
+  font-size: 20px;
+}
+
 .idea {
   font-family: "Quattrocento";
   font-size: 20px;
@@ -268,6 +273,28 @@ header .idea {
 
 fieldset {
   border: none;
+}
+fieldset input[type=search] {
+  padding: 8px;
+  margin: 10px;
+  width: 20%;
+  text-align: center;
+  margin-left: 485px;
+}
+fieldset ::-webkit-input-placeholder {
+  opacity: 0.1;
+}
+fieldset ::-moz-placeholder {
+  opacity: 0.1;
+}
+fieldset :-ms-input-placeholder {
+  opacity: 0.1;
+}
+fieldset ::-ms-input-placeholder {
+  opacity: 0.1;
+}
+fieldset ::placeholder {
+  opacity: 0.1;
 }
 fieldset .flex-container {
   display: -webkit-box;
@@ -340,7 +367,7 @@ button {
   border: 10px dotted black;
   background: none;
   padding: 15px 50px 15px 50px;
-  margin: 80px;
+  margin: 60px;
   -webkit-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
   margin-left: 480px;
