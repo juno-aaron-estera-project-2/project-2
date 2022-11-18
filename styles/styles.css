@@ -243,9 +243,20 @@ h1 {
   font-size: 70px;
 }
 
-label {
+input {
+  font-family: "Staatliches";
+  font-size: 20px;
+}
+
+.idea {
   font-family: "Quattrocento";
-  font-size: 30px;
+  font-size: 20px;
+}
+
+p {
+  font-family: "Quattrocento";
+  font-size: 40px;
+  font-weight: bold;
 }
 
 button {
@@ -256,9 +267,34 @@ button {
 header h1 {
   text-align: center;
 }
+header .idea {
+  text-align: center;
+}
 
 fieldset {
   border: none;
+}
+fieldset input[type=search] {
+  padding: 8px;
+  margin: 10px;
+  width: 20%;
+  text-align: center;
+  margin-left: 485px;
+}
+fieldset ::-webkit-input-placeholder {
+  opacity: 0.1;
+}
+fieldset ::-moz-placeholder {
+  opacity: 0.1;
+}
+fieldset :-ms-input-placeholder {
+  opacity: 0.1;
+}
+fieldset ::-ms-input-placeholder {
+  opacity: 0.1;
+}
+fieldset ::placeholder {
+  opacity: 0.1;
 }
 fieldset .flex-container {
   display: -webkit-box;
@@ -273,17 +309,18 @@ fieldset .flex-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
 }
-fieldset input[type=radio]:checked + img {
+fieldset .flex-container input[type=radio]:checked + img {
   -webkit-box-shadow: 5px 5px 20px 15px rgba(0, 0, 0, 0.4);
           box-shadow: 5px 5px 20px 15px rgba(0, 0, 0, 0.4);
   -webkit-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
 }
-fieldset img:hover {
+fieldset .flex-container label:hover {
   opacity: 0.6;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -291,16 +328,39 @@ fieldset img:hover {
   transition: 0.4s ease-in;
   cursor: pointer;
 }
-fieldset input[type=radio] {
+fieldset .flex-container label:hover p {
+  visibility: visible;
+  background-color: white;
+  opacity: 0.6;
+  width: 100%;
+  text-align: center;
+  bottom: 40px;
+  left: -5px;
+}
+fieldset .flex-container input[type=radio] {
   display: none;
 }
-fieldset img {
+fieldset .flex-container label {
+  position: relative;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+  width: 30%;
+  margin-bottom: 40px;
+}
+fieldset .flex-container p {
+  position: absolute;
+  bottom: 45px;
+  left: 29px;
+  z-index: 1;
+  visibility: hidden;
+}
+fieldset .flex-container img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 350px;
-  height: 350px;
+  width: 100%;
+  height: 215px;
   position: relative;
-  margin: 20px;
+  margin: -5px;
   -webkit-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
 }
@@ -309,9 +369,10 @@ button {
   border: 10px dotted black;
   background: none;
   padding: 15px 50px 15px 50px;
-  margin: 80px;
+  margin: 60px;
   -webkit-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
+  margin-left: 480px;
 }
 
 button:hover {
@@ -360,7 +421,7 @@ ul.recipes li.card h3 {
 }
 ul.recipes li.card h4 {
   font-family: "Quattrocento";
-  font-size: 20px;
+  font-size: 25px;
   margin: 0;
 }
 ul.recipes li.card p {
@@ -376,6 +437,9 @@ ul.recipes li.card ol {
   margin: 0;
 }
 ul.recipes li.card a.button {
+  font-family: "Staatliches";
+  font-size: 30px;
+  text-decoration: none;
   background: black;
   color: white;
   padding: 15px 20px;

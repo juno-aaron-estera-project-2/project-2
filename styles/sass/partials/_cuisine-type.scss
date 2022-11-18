@@ -3,49 +3,93 @@
 fieldset {
     border: none;
 
+    input[type=search] {
+        padding: 8px;
+        margin: 10px;
+        width: 20%;
+        text-align: center;
+        margin-left: 485px; 
+    }
+
+    
+
+    ::placeholder {
+        opacity: 0.1;
+        
+    }
+    
 
     .flex-container {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         align-items: center;
-        justify-content: space-evenly;
-    }
+        justify-content: space-between;
+        margin-top: 30px;
+
 
     input[type=radio]:checked + img {
         box-shadow: 5px 5px 20px 15px rgba(0,0,0,0.40);
         transition: 0.4s ease-out;
       }
 
-      img:hover {
+      label:hover {
         opacity: 0.6;
         transform: scale(1.1);
         transition: 0.4s ease-in;
         cursor: pointer;
       }
 
+      label:hover p {
+        visibility: visible;
+        background-color: white;
+        opacity: 0.6;
+        width: 100%;
+        text-align: center;
+        bottom: 40px;
+        left: -5px;
+        
+      }
+
     input[type=radio] {
         display: none;        
     }
 
-    img {
-        object-fit: cover;
-        width: 350px;
-        height: 350px; 
-        position: relative; 
-        margin: 20px;
+    label {
+        position: relative;
         transition: 0.4s ease-out;
+        width: 30%;
+        margin-bottom: 40px;
     }
 
-    
+    p {
+        position: absolute;
+        bottom: 45px;
+        left: 29px;
+        z-index: 1;
+        visibility: hidden;
+    }
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 215px; 
+        position: relative; 
+        margin: -5px;
+        transition: 0.4s ease-out;       
+    }
+
+ }  
 }
 
 button {
     border: 10px dotted black;
     background: none;
     padding: 15px 50px 15px 50px;
-    margin: 80px;
+    margin: 60px;
     transition: 0.4s ease-out;
+    margin-left: 480px;
+   
 }
 
 button:hover {
@@ -53,4 +97,4 @@ button:hover {
     transform: scale(1.1);
     transition: 0.4s ease-in;
     cursor: pointer;
-  }
+}

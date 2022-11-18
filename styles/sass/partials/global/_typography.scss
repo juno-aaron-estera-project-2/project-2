@@ -8,9 +8,20 @@ h1 {
     font-size: 70px;
 }
 
-label {
+input {
+    font-family: variables.$button-font;
+    font-size: 20px;
+}
+
+.idea {
     font-family: variables.$base-font;
-    font-size: 30px;
+    font-size: 20px;
+}
+
+p {
+    font-family: variables.$base-font;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 button {

@@ -9,6 +9,7 @@ ul.recipes {
       list-style:none;
       text-align: center;
 
+
       li.card {
          width: 30%;
          display: flex;
@@ -24,7 +25,7 @@ ul.recipes {
 
          h4 {
             font-family: variables.$base-font;
-            font-size: 20px;
+            font-size: 25px;
             margin: 0;
          }
                   
@@ -43,6 +44,9 @@ ul.recipes {
          }
 
          a.button {
+            font-family: variables.$button-font;
+            font-size: 30px;
+            text-decoration: none;
             background: black;
             color: white;
             padding: 15px 20px;
