@@ -3,6 +3,21 @@
 fieldset {
     border: none;
 
+    input[type=search] {
+        padding: 8px;
+        margin: 10px;
+        width: 20%;
+        text-align: center;
+        margin-left: 485px; 
+    }
+
+    
+
+    ::placeholder {
+        opacity: 0.1;
+        
+    }
+    
 
     .flex-container {
         display: flex;
@@ -43,6 +58,8 @@ fieldset {
     label {
         position: relative;
         transition: 0.4s ease-out;
+        width: 30%;
+        margin-bottom: 40px;
     }
 
     p {
@@ -55,11 +72,11 @@ fieldset {
 
     img {
         object-fit: cover;
-        width: 215px;
+        width: 100%;
         height: 215px; 
         position: relative; 
         margin: -5px;
-        transition: 0.4s ease-out;
+        transition: 0.4s ease-out;       
     }
 
  }  
@@ -69,7 +86,7 @@ button {
     border: 10px dotted black;
     background: none;
     padding: 15px 50px 15px 50px;
-    margin: 80px;
+    margin: 60px;
     transition: 0.4s ease-out;
     margin-left: 480px;
    

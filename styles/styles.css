@@ -269,6 +269,28 @@ header .idea {
 fieldset {
   border: none;
 }
+fieldset input[type=search] {
+  padding: 8px;
+  margin: 10px;
+  width: 20%;
+  text-align: center;
+  margin-left: 485px;
+}
+fieldset ::-webkit-input-placeholder {
+  opacity: 0.1;
+}
+fieldset ::-moz-placeholder {
+  opacity: 0.1;
+}
+fieldset :-ms-input-placeholder {
+  opacity: 0.1;
+}
+fieldset ::-ms-input-placeholder {
+  opacity: 0.1;
+}
+fieldset ::placeholder {
+  opacity: 0.1;
+}
 fieldset .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -317,6 +339,8 @@ fieldset .flex-container label {
   position: relative;
   -webkit-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
+  width: 30%;
+  margin-bottom: 40px;
 }
 fieldset .flex-container p {
   position: absolute;
@@ -328,7 +352,7 @@ fieldset .flex-container p {
 fieldset .flex-container img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 215px;
+  width: 100%;
   height: 215px;
   position: relative;
   margin: -5px;
@@ -340,7 +364,7 @@ button {
   border: 10px dotted black;
   background: none;
   padding: 15px 50px 15px 50px;
-  margin: 80px;
+  margin: 60px;
   -webkit-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
   margin-left: 480px;
