@@ -314,21 +314,21 @@ fieldset .flex-container {
           justify-content: space-between;
   margin-top: 30px;
 }
-fieldset .flex-container input[type=radio]:checked + img {
+fieldset .flex-container input[type=radio]:focus + img {
   -webkit-box-shadow: 5px 5px 20px 15px rgba(0, 0, 0, 0.4);
           box-shadow: 5px 5px 20px 15px rgba(0, 0, 0, 0.4);
   -webkit-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  border-bottom: solid 10px yellow;
 }
-fieldset .flex-container label:hover {
-  opacity: 0.6;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+fieldset .flex-container label:hover, fieldset .flex-container label:focus, fieldset .flex-container input[type=radio]:checked + img {
   -webkit-transition: 0.4s ease-in;
   transition: 0.4s ease-in;
   cursor: pointer;
 }
-fieldset .flex-container label:hover p {
+fieldset .flex-container label p {
   visibility: visible;
   background-color: white;
   opacity: 0.6;
@@ -338,7 +338,9 @@ fieldset .flex-container label:hover p {
   left: -5px;
 }
 fieldset .flex-container input[type=radio] {
-  display: none;
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
 }
 fieldset .flex-container label {
   position: relative;

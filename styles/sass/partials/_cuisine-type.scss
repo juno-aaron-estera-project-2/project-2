@@ -28,19 +28,19 @@ fieldset {
         margin-top: 30px;
 
 
-    input[type=radio]:checked + img {
+    input[type=radio]:focus + img {
         box-shadow: 5px 5px 20px 15px rgba(0,0,0,0.40);
         transition: 0.4s ease-out;
+        transform: scale(1.2);
+        border-bottom: solid 10px yellow;
       }
 
-      label:hover {
-        opacity: 0.6;
-        transform: scale(1.1);
+      label:hover, label:focus, input[type=radio]:checked + img  {
         transition: 0.4s ease-in;
         cursor: pointer;
       }
 
-      label:hover p {
+      label p{
         visibility: visible;
         background-color: white;
         opacity: 0.6;
@@ -52,7 +52,9 @@ fieldset {
       }
 
     input[type=radio] {
-        display: none;        
+        position: fixed;
+        opacity: 0;
+        pointer-events: none;
     }
 
     label {
