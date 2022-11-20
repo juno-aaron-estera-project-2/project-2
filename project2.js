@@ -1,7 +1,7 @@
 const app = {};
 app.init = () => {
 	document
-		.querySelector('button[type="submit"')
+		.querySelector('button[type="submit"]')
 		.addEventListener('click', (event) => {
 			event.preventDefault();
 			app.getRecipes();
@@ -42,6 +42,7 @@ app.getRecipes = () => {
 		});
 };
 
+// Function to display recipes
 app.displayRecipes = (recipes) => {
 	document.querySelector('.recipes').innerHTML = '';
 	recipes.forEach((recipe) => {
