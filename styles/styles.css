@@ -274,12 +274,22 @@ header .idea {
 fieldset {
   border: none;
 }
+fieldset .search-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 fieldset input[type=search] {
   padding: 8px;
   margin: 10px;
   width: 20%;
   text-align: center;
-  margin-left: 485px;
 }
 fieldset ::-webkit-input-placeholder {
   opacity: 0.1;
@@ -321,7 +331,6 @@ fieldset .flex-container input[type=radio]:focus + img {
   transition: 0.4s ease-out;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  border-bottom: solid 10px yellow;
 }
 fieldset .flex-container label:hover, fieldset .flex-container label:focus, fieldset .flex-container input[type=radio]:checked + img {
   -webkit-transition: 0.4s ease-in;
@@ -367,6 +376,18 @@ fieldset .flex-container img {
   transition: 0.4s ease-out;
 }
 
+.button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 button {
   border: 10px dotted black;
   background: none;
@@ -374,7 +395,6 @@ button {
   margin: 20px;
   -webkit-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
-  margin-left: 480px;
 }
 
 button:hover {

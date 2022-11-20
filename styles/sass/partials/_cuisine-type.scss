@@ -3,22 +3,23 @@
 fieldset {
     border: none;
 
+    .search-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     input[type=search] {
         padding: 8px;
         margin: 10px;
         width: 20%;
-        text-align: center;
-        margin-left: 485px; 
+        text-align: center; 
     }
-
-    
 
     ::placeholder {
-        opacity: 0.1;
-        
+        opacity: 0.1; 
     }
     
-
     .flex-container {
         display: flex;
         flex-wrap: wrap;
@@ -32,7 +33,7 @@ fieldset {
         box-shadow: 5px 5px 20px 15px rgba(0,0,0,0.40);
         transition: 0.4s ease-out;
         transform: scale(1.2);
-        border-bottom: solid 10px yellow;
+        // border-bottom: solid 10px rgb(92, 150, 204);
       }
 
       label:hover, label:focus, input[type=radio]:checked + img  {
@@ -84,15 +85,18 @@ fieldset {
  }  
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 button {
     border: 10px dotted black;
     background: none;
     padding: 15px 50px 15px 50px;
     margin: 20px;
     transition: 0.4s ease-out;
-    margin-left: 480px;
-    
-    
 }
 
 button:hover {

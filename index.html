@@ -29,10 +29,11 @@
             <form action="#">
                 <fieldset class="cuisine">
 
+                    <div class="search-container">
                         <input type="search" name="searchbar" id="searchbar" placeholder="Search Cuisine...">
-                    
+                    </div>
+
                     <div class="flex-container">
-                        
                         <label for="italian">
                             <p>Italian</p>
                             <input type="radio" name="cuisine" id="italian" value="italian">
@@ -69,23 +70,23 @@
                             <img src="./Images/Mexican.jpg" alt="three different tacos">
                         </label>
                     </div>
+
                 </fieldset>
-            
+
+                <div class="button-container">
                     <button type="submit">Find Recipes</button>
-                
+                </div>
+
             </form>
 
             <!-- Recipes Section -->
             <section>
-                <!-- Name of cuisine -->
-                <h2></h2>
-
-                <!-- Three recipe cards show here -->
+                <!-- Recipe cards show here -->
                 <ul class="recipes"></ul> 
-
             </section>
         </main>
     </div>
+        <!-- Javascript -->
         <script src="./project2.js"></script>
 </body>
 </html>
