@@ -42,6 +42,7 @@ app.getRecipes = () => {
 		});
 };
 
+
 // Function to display recipes
 app.displayRecipes = (recipes) => {
 	document.querySelector('.recipes').innerHTML = '';
