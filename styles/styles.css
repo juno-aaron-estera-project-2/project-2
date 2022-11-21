@@ -483,6 +483,12 @@ ul.recipes li.card a.button {
   margin-top: 20px;
 }
 
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
 @media (max-width: 800px) {
   ul.recipes {
     -webkit-box-orient: vertical;

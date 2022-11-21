@@ -59,6 +59,12 @@ ul.recipes {
       }
 }
 
+footer {
+   text-align: center;
+   background-color: black;
+   color: white;
+}
+
 // Media Queries
 @media (max-width: 800px) {
    ul.recipes {
