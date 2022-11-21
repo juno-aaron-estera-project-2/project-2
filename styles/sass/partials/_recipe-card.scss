@@ -16,6 +16,7 @@ ul.recipes {
          display: flex;
          flex-direction: column;
          gap: 20px;
+         margin-bottom: 50px;
 
          
          h3{
@@ -56,4 +57,16 @@ ul.recipes {
 
 
       }
+}
+
+
+@media (max-width: 800px) {
+   ul.recipes {
+      flex-direction: column;
+
+      li.card {
+         width: 100%;
+      }
+   }
+   
 }

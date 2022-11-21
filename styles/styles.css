@@ -435,6 +435,7 @@ ul.recipes li.card {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
+  margin-bottom: 50px;
 }
 ul.recipes li.card h3 {
   font-family: "Ultra";
@@ -466,4 +467,16 @@ ul.recipes li.card a.button {
   color: white;
   padding: 15px 20px;
   margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  ul.recipes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  ul.recipes li.card {
+    width: 100%;
+  }
 }
